@@ -1,0 +1,9 @@
+# Core dependencies
+anthropic>=0.39.0
+python-dotenv>=1.0.0
+
+# For Streamlit UI version
+streamlit>=1.31.0
+
+# Optional: For better terminal output
+colorama>=0.4.6
