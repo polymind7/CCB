@@ -25,7 +25,7 @@ st.set_page_config(
 # Initialize Anthropic client
 @st.cache_resource
 def get_client():
-    return Anthropic(api_key=os.environ.get("ANTHROPIC_API_KEY"))
+    return Anthropic(api_key=st.secrets.ANTHROPIC_API_KEY)
 
 client = get_client()
 
@@ -228,3 +228,4 @@ if prompt := st.chat_input("Message Claude..."):
 # Footer
 st.divider()
 st.caption("💾 Conversations saved locally in 'conversations/' directory")
+
